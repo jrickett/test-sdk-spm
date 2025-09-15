@@ -14,15 +14,7 @@ let package = Package(
     targets: [
         // We'll replace these with `url:` + `checksum:` once the Release is created.
         // For now, leave placeholders so the repo can build.
-        .binaryTarget(
-            name: "TestFaceScanUI",
-            url: "https://github.com/jrickett/test-sdk-spm/releases/download/0.1.0/TestFaceScanUI.xcframework.zip",
-            checksum: "5e567e6a35240434a96161ffe6769361a5991469669a9dc9d45688c6e87e0229"
-        ),
-        .binaryTarget(
-            name: "TestIDScanUI",
-            url: "https://github.com/jrickett/test-sdk-spm/releases/download/0.1.0/TestIDScanUI.xcframework.zip",
-            checksum: "a916d0f45df70441e3f3d1f6a21e0cf1564edaf2e64c297ae28c14399a4e0158"
-        )
+        .binaryTarget(name: "TestFaceScanUI", url: "https://github.com/jrickett/test-sdk-spm/releases/download/0.1.1/TestFaceScanUI-0.1.1.zip", checksum: "4c064b8706959bda5e108d48859858cef77bc9080ca23dbab2cecabb6b96842f"),
+        .binaryTarget(name: "TestIDScanUI", url: "https://github.com/jrickett/test-sdk-spm/releases/download/0.1.1/TestIDScanUI-0.1.1.zip", checksum: "a7d769267ddab5d6ff8f68ad7728fb35cf425c7c8a6c8a168e3f378fcd2320cc")
     ]
 )
